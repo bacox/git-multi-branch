@@ -1,7 +1,7 @@
 import setuptools
 
 def install_requires():
-    return ['click']
+    return ['click, git']
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
