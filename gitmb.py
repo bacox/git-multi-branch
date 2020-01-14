@@ -82,7 +82,7 @@ def main(target_dir, cache_dir, url):
     numberOfBranches = len(cleanBranchNames)
     print('Found %i branches' % numberOfBranches)
     for idx, branch in enumerate(cleanBranchNames):
-        progress_str = '[' + (' '*(len(str(numberOfBranches)) - len(str(idx)))) + str(idx) + '/' + str(numberOfBranches) + ']'
+        progress_str = '[' + (' '*(len(str(numberOfBranches)) - len(str(idx+1)))) + str(idx+1) + '/' + str(numberOfBranches) + ']'
         clone_branch(url, branch[0], branch[1], target_repo_dir, progress_str)
 
 

@@ -11,11 +11,11 @@ setuptools.setup(
     version="0.1",
     author="bacox",
     author_email="bacox.dev@gmail.com",
-    py_modules=['git-multi-branch'],
+    py_modules=['gitmb'],
     description="Clone all branches of a git repository",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/bacox/git-multi-branch",
+    url="https://github.com/bacox/git-multi-branch  ",
     install_requires=install_requires(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -24,6 +24,6 @@ setuptools.setup(
     ],
     entry_points="""
         [console_scripts]
-        git-multi-branch=git-multi-branch:main
+        git-multi-branch=gitmb:main
     """,
 )
