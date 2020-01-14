@@ -1,14 +1,14 @@
 import setuptools
 
 def install_requires():
-    return ['click, git']
+    return ['click', 'gitpython', 'gitdb2']
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="git-multi-branch",
-    version="0.1",
+    version="0.3.1",
     author="bacox",
     author_email="bacox.dev@gmail.com",
     py_modules=['gitmb'],
